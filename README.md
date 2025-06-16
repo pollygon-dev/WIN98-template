@@ -1,8 +1,6 @@
 # WIN98 template
 
-A nostalgic, fully functional website template that recreates the classic Windows 98 desktop experience in your browser. Perfect for retro-themed portfolios, personal websites, or anyone who wants to bring back the 90s computing aesthetic.
-
-![Windows 98 Website Preview](https://pollygon-dev.github.io/WIN98-template/)
+A fully functional website template that recreates the classic Windows 98 desktop experience in your browser. Perfect for retro-themed portfolios, personal websites, or anyone who wants to bring back the 90s computing aesthetic.
 
 ## ✨ Features
 
