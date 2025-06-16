@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 98 Style Website Template</title>
+    <!-- 
+        Windows 98 Style Website Template
+        Based on the original Windows template from HTML5-Templates.com
+        Original: https://html5-templates.com/preview/windows.html
+    -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DESKTOP BACKGROUND -->
+    <div id="desktop" class="crt-effect">
+        
+        <!-- DESKTOP ICONS -->
+        <div class="desktop-icons">
+            <!-- Icon 1: About -->
+            <div class="icon" onclick="openWindow('about')">
+                <div class="icon-image">
+                    <i class="fas fa-user"></i>
+                </div>
+                <span class="icon-text">About Me</span>
+            </div>
+
+            <!-- Icon 2: Projects -->
+            <div class="icon" onclick="openWindow('projects')">
+                <div class="icon-image">
+                    <i class="fas fa-folder"></i>
+                </div>
+                <span class="icon-text">My Projects</span>
+            </div>
+
+            <!-- Icon 3: Calculator -->
+            <div class="icon" onclick="openWindow('calculator')">
+                <div class="icon-image">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <span class="icon-text">Calculator</span>
+            </div>
+
+            <!-- Icon 4: Themes -->
+            <div class="icon" onclick="openWindow('themes')">
+                <div class="icon-image">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <span class="icon-text">Themes</span>
+            </div>
+
+            <!-- Icon 5: Notepad -->
+            <div class="icon" onclick="openWindow('notepad')">
+                <div class="icon-image">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <span class="icon-text">Notepad</span>
+            </div>
+        </div>
+
+        <!-- WINDOWS -->
+        
+        <!-- About Window -->
+        <div class="window" id="about-window" style="top: 50px; left: 100px; width: 450px; height: 350px;">
+            <div class="window-header">
+                <span class="window-title">About Me</span>
+                <div class="window-controls">
+                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('about')">_</a>
+                    <a href="#" class="window-button maximize-btn" onclick="maximizeWindow('about')">□</a>
+                    <a href="#" class="window-button close-btn" onclick="closeWindow('about')">×</a>
+                </div>
+            </div>
+            <div class="window-content">
+                <h3>Welcome to My Windows 98 Style Website!</h3>
+                <p>This nostalgic website brings back the classic Windows 98 interface that we all remember.</p>
+                <br>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Authentic Windows 98 styling</li>
+                    <li>Draggable windows</li>
+                    <li>Working taskbar and start menu</li>
+                    <li>FontAwesome icons</li>
+                    <li>Responsive design</li>
+                </ul>
+                <br>
+                <p>Double-click on desktop icons to open applications, or use the Start menu to navigate.</p>
+                <br>
+                <div class="center">
+                    <button onclick="alert('Hello from Windows 98!')">Click Me!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Window -->
+        <div class="window" id="projects-window" style="top: 80px; left: 150px; width: 500px; height: 400px;">
+            <div class="window-header">
+                <span class="window-title">My Projects</span>
+                <div class="window-controls">
+                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('projects')">_</a>
+                    <a href="#" class="window-button maximize-btn" onclick="maximizeWindow('projects')">□</a>
+                    <a href="#" class="window-button close-btn" onclick="closeWindow('projects')">×</a>
+                </div>
+            </div>
+            <div class="window-content" style="padding: 0;">
+                <iframe src="https://example.com" width="100%" height="100%" frameborder="0" style="border: none;">
+                    <p>Your browser does not support iframes. Please visit <a href="https://example.com">example.com</a> directly.</p>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Calculator Window -->
+        <div class="window" id="calculator-window" style="top: 80px; left: 150px; width: 200px; height: 300px;">
+            <div class="window-header">
+                <span class="window-title">Calculator</span>
+                <div class="window-controls">
+                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('calculator')">_</a>
+                    <a href="#" class="window-button close-btn" onclick="closeWindow('calculator')">×</a>
+                </div>
+            </div>
+            <div class="window-content" style="padding: 4px;">
+                <input type="text" id="calc-display" readonly style="width: 100%; text-align: right; font-family: monospace; font-size: 14px; margin-bottom: 4px;" value="0">
+                
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;">
+                    <button onclick="clearCalc()" style="grid-column: span 2;">Clear</button>
+                    <button onclick="calcBackspace()">←</button>
+                    <button onclick="calcInput('/')">/</button>
+                    
+                    <button onclick="calcInput('7')">7</button>
+                    <button onclick="calcInput('8')">8</button>
+                    <button onclick="calcInput('9')">9</button>
+                    <button onclick="calcInput('*')">×</button>
+                    
+                    <button onclick="calcInput('4')">4</button>
+                    <button onclick="calcInput('5')">5</button>
+                    <button onclick="calcInput('6')">6</button>
+                    <button onclick="calcInput('-')">-</button>
+                    
+                    <button onclick="calcInput('1')">1</button>
+                    <button onclick="calcInput('2')">2</button>
+                    <button onclick="calcInput('3')">3</button>
+                    <button onclick="calcInput('+')">+</button>
+                    
+                    <button onclick="calcInput('0')" style="grid-column: span 2;">0</button>
+                    <button onclick="calcInput('.')">.</button>
+                    <button onclick="calcEqual()">=</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Themes Window -->
+        <div class="window" id="themes-window" style="top: 110px; left: 200px; width: 350px; height: 400px;">
+            <div class="window-header">
+                <span class="window-title">Display Properties</span>
+                <div class="window-controls">
+                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('themes')">_</a>
+                    <a href="#" class="window-button maximize-btn" onclick="maximizeWindow('themes')">□</a>
+                    <a href="#" class="window-button close-btn" onclick="closeWindow('themes')">×</a>
+                </div>
+            </div>
+            <div class="window-content">
+                <h3>Desktop Themes</h3>
+                <p>Choose a color scheme for your desktop:</p>
+                <br>
+                
+                <div style="border: 1px inset #c0c0c0; padding: 8px; background: #f0f0f0; margin-bottom: 10px;">
+                    <h4>Available Themes:</h4>
+                    <div style="margin: 8px 0;">
+                        <input type="radio" id="default-theme" name="theme" value="default" checked onchange="previewTheme('default')">
+                        <label for="default-theme">Windows Standard</label>
+                    </div>
+                    <div style="margin: 8px 0;">
+                        <input type="radio" id="pink-theme" name="theme" value="pink" onchange="previewTheme('pink')">
+                        <label for="pink-theme">Pastel Pink</label>
+                    </div>
+                    <div style="margin: 8px 0;">
+                        <input type="radio" id="cyberpunk-theme" name="theme" value="cyberpunk" onchange="previewTheme('cyberpunk')">
+                        <label for="cyberpunk-theme">Cyberpunk</label>
+                    </div>
+                    <div style="margin: 8px 0;">
+                        <input type="radio" id="lilac-theme" name="theme" value="lilac" onchange="previewTheme('lilac')">
+                        <label for="lilac-theme">Lilac</label>
+                    </div>
+                    <div style="margin: 8px 0;">
+                        <input type="radio" id="green-theme" name="theme" value="green" onchange="previewTheme('green')">
+                        <label for="green-theme">Forest Green</label>
+                    </div>
+                </div>
+
+                <div style="border: 1px inset #c0c0c0; padding: 8px; background: #f0f0f0;">
+                    <h4>Preview:</h4>
+                    <div id="theme-preview" style="border: 1px solid #808080; height: 100px; margin: 8px 0; position: relative;">
+                        <div id="preview-desktop" style="width: 100%; height: 100%; background: #008080; position: relative;">
+                            <div id="preview-window" style="background: #c0c0c0; border: 1px outset #c0c0c0; margin: 10px; padding: 0; width: 120px; position: absolute;">
+                                <div id="preview-titlebar" style="background: linear-gradient(90deg, #000080 0%, #0040c0 100%); color: white; padding: 2px 4px; font-size: 9px; font-weight: bold;">Sample Window</div>
+                                <div id="preview-content" style="padding: 4px; font-size: 9px; color: #000000; background: #c0c0c0;">This is a preview of the selected theme.</div>
+                                <div id="preview-button" style="background: #c0c0c0; border: 1px outset #c0c0c0; margin: 4px; padding: 2px 8px; font-size: 8px; display: inline-block;">Button</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="center">
+                    <button onclick="applyCurrentTheme()">Apply</button>
+                    <button onclick="applyCurrentTheme(); closeWindow('themes');">OK</button>
+                    <button onclick="resetTheme()">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notepad Window -->
+        <div class="window" id="notepad-window" style="top: 140px; left: 250px; width: 400px; height: 300px;">
+            <div class="window-header">
+                <span class="window-title">Untitled - Notepad</span>
+                <div class="window-controls">
+                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('notepad')">_</a>
+                    <a href="#" class="window-button maximize-btn" onclick="maximizeWindow('notepad')">□</a>
+                    <a href="#" class="window-button close-btn" onclick="closeWindow('notepad')">×</a>
+                </div>
+            </div>
+            <div class="window-content" style="padding: 0;">
+                <textarea id="notepad-text" style="width: 100%; height: 100%; border: none; resize: none; font-family: 'Courier New', monospace; font-size: 11px; padding: 4px;" placeholder="Type your notes here...">Welcome to Notepad!
+
+This is a fully functional text editor window. You can:
+- Type and edit text
+- Use it for quick notes
+- Customize the content however you like
+
+Try typing something!</textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- TASKBAR -->
+    <div class="taskbar">
+        <div class="start-button" onclick="toggleStartMenu()">
+            <i class="fab fa-windows"></i>
+            Start
+        </div>
+        
+        <div class="taskbar-items" id="taskbar-items">
+            <!-- Taskbar items will be added here dynamically -->
+        </div>
+
+        <div class="clock" id="clock">
+            12:00 PM
+        </div>
+    </div>
+
+    <!-- START MENU -->
+    <div class="start-menu" id="start-menu">
+        <div class="start-menu-header">
+            <i class="fab fa-windows"></i>
+            Windows 98
+        </div>
+        <div class="start-menu-items">
+            <div class="start-menu-item" onclick="openWindow('about')">
+                <i class="fas fa-user"></i>
+                About Me
+            </div>
+            <div class="start-menu-item" onclick="openWindow('projects')">
+                <i class="fas fa-folder"></i>
+                My Projects
+            </div>
+            <div class="start-menu-separator"></div>
+            <div class="start-menu-item" onclick="openWindow('calculator')">
+                <i class="fas fa-calculator"></i>
+                Calculator
+            </div>
+            <div class="start-menu-item" onclick="openWindow('themes')">
+                <i class="fas fa-palette"></i>
+                Themes
+            </div>
+            <div class="start-menu-item" onclick="openWindow('notepad')">
+                <i class="fas fa-edit"></i>
+                Notepad
+            </div>
+            <div class="start-menu-separator"></div>
+            <div class="start-menu-item" onclick="showShutdownDialog()">
+                <i class="fas fa-power-off"></i>
+                Shut Down...
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
