@@ -265,8 +265,8 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background: var(--window-bg);
     border-left: 1px solid var(--window-border-dark);
     border-top: 1px solid var(--window-border-dark);
@@ -276,6 +276,7 @@ body {
         linear-gradient(45deg, transparent 60%, var(--window-border-dark) 60%, var(--window-border-dark) 65%, transparent 65%);
     background-size: 4px 4px;
     background-position: 0 0, 2px 2px;
+    z-index: 10;
 }
 
 .window.active {
@@ -672,7 +673,7 @@ button:active, input[type="button"]:active, input[type="submit"]:active {
         height: 85vh !important;
         top: 5vh !important;
         left: 2.5vw !important;
-        resize: none; /* Disable resize on mobile */
+        resize: none; /* Keep disabled on mobile for better UX */
     }
 
     .window.maximized {
