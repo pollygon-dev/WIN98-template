@@ -2,35 +2,35 @@
 
 A fully functional website template that recreates the classic Windows 98 desktop experience in your browser. Perfect for retro-themed portfolios, personal websites, or anyone who wants to bring back the 90s computing aesthetic.
 
-## ✨ Features
+## Features
 
-### 🖥️ **Authentic Windows 98 Experience**
+### Authentic Windows 98 Experience
 - **Desktop interface** with WIN98's teal background
 - **Draggable and resizable windows** with title bars
 - **Working taskbar** with Start button and system clock
 - **Start menu** with program shortcuts
 - **Desktop icons** with proper selection states
 
-### 🎮 **Built-in Applications**
+### Built-in Applications
 - **About Me** - Personal introduction window
 - **My Projects** - Portfolio showcase with iframe support
 - **Calculator** - Fully functional calculator app
 - **Themes** - Display Properties for customizing appearance
 - **Notepad** - Text editor for quick notes
 
-### 🌈 **Theme System**
+### Theme System
 - **5 Built-in themes**: Windows Standard, Pastel Pink, Cyberpunk, Lilac, Forest Green
 - **Live preview** before applying themes
 - **CSS custom properties** for easy theme creation
 - **Authentic Display Properties window**
 
-### 📱 **Modern Features**
+### Modern Features
 - **Responsive design** - works on desktop, tablet, and mobile
 - **FontAwesome icons** for crisp, scalable graphics
 - **Clean separation** of HTML, CSS, and JavaScript
 - **Easy customization** with helper functions
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Download Files
 ```
@@ -45,7 +45,7 @@ windows98-template/
 2. Open `index.html` in your web browser
 3. Enjoy the nostalgic Windows 98 experience!
 
-## 🎓 Complete Beginner's Guide
+## Complete Beginner's Guide
 
 ### Step 1: Understanding the Files
 
@@ -302,7 +302,7 @@ To add images to any window:
 <button onclick="window.open('https://google.com')">Visit Google</button>
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### **Common Issues:**
 
@@ -329,7 +329,7 @@ To add images to any window:
 4. Test that windows open, close, and resize properly
 5. Check that themes work in the Themes window
 
-## 🎨 Available Themes
+## Available Themes
 
 | Theme | Description |
 |-------|-------------|
@@ -339,15 +339,15 @@ To add images to any window:
 | **Lilac** | Purple and lavender color scheme |
 | **Forest Green** | Nature-inspired green theme |
 
-## 📱 Browser Support
+## Browser Support
 
-- ✅ **Chrome** (recommended)
-- ✅ **Firefox**
-- ✅ **Safari**
-- ✅ **Edge**
-- ⚠️ **Internet Explorer** (limited support)
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+- Internet Explorer (limited support)
 
-## 📄 License
+## License
 
 This project is released under the [Unlicense](https://unlicense.org) - you can do whatever you want with it, no strings attached!
 
@@ -358,14 +358,15 @@ Example attribution:
 Based on the original Windows template from HTML5-Templates.com
 Original: https://html5-templates.com/preview/windows.html
 ```
-## 🙏 Acknowledgments
+
+## Acknowledgments
 
 - **HTML5-Templates.com** - Original Windows template inspiration from [windows.html](https://html5-templates.com/preview/windows.html)
 - **Microsoft** - For the original Windows 98 design and interface
 - **FontAwesome** - For the beautiful icon library
 - **Google Fonts** - For web font support
 
-## 📞 Support
+## Support
 
 If you encounter any issues or have questions:
 Chat with me on Bluesky: **[@pollygon.dev](https://bsky.app/profile/pollygon.dev)**
